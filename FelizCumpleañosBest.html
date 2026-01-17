@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	margin: 0 ;
+	background-color: #000000;
+}
+	
+video{
+	width:300px;
+    height:200px;
+	display: flex;
+	object-fit: cover;
+	z-index: 45;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translateX(-50%) translateY(-50%) ;
+}
+
+img{
+    width:250px;
+    height:250px;
+	aspect-ratio: 1/1;
+   /* max-width:250px;
+    max-height:250px; */
+    display: flex;
+    object-fit:cover;
+    object-position:center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%) rotateZ(15deg);
+	
+}
+
+img:nth-child(1){
+	top: 500px;
+	left: 100px;
+	
+}
+img:nth-child(2){
+	top: 100px;
+	left: 150px;
+	width:250px;
+    height:340px;
+}
+img:nth-child(3){
+	top: -100px;
+	left: 250px;
+	width:250px;
+    height:340px;
+	transform: rotateZ(-15deg)
+}
+img:nth-child(4){
+	top: 100px;
+	left: 600px;
+	width:250px;
+    height:340px;
+}
+img:nth-child(5){
+	top:100px;
+	left: 880px;
+	width:300px;
+    height:250px;
+}
+img:nth-child(6){
+	top:-80px;
+	left: 970px;
+	transform: rotateZ(-15deg);
+	width:250px;
+    height:340px;
+}
+img:nth-child(7){
+	top: 100px;
+	left: 1350px;
+	width:250px;
+    height:280px;
+}
+img:nth-child(8){
+	top: 260px;
+	left: 0px;
+	transform: rotateZ(-10deg);
+	width:300px;
+    height:220px;
+}
+img:nth-child(9){
+	top: 360px;
+	left: 400px;
+	width:250px;
+    height:250px;
+}
+
+img:nth-child(10){
+	top: 200px;
+	left: 420px;
+	transform: rotateZ(-10deg);
+	width:350px;
+    height:180px;
+}
+img:nth-child(11){
+	top: 340px;
+	left: 940px;
+}
+img:nth-child(12){
+	top:220px;
+	left: 1050px;
+	transform: rotateZ(-10deg);
+	width:400px;
+    height:200px;
+}
+img:nth-child(13){
+	top:300px;
+	left: 1220px;
+	transform: rotateZ(-25deg)
+}
+img:nth-child(14){
+	top: 400px;
+	left: 0px;
+	transform: rotateZ(-25deg);
+	width:200px;
+    height:300px;
+}
+img:nth-child(15){
+	top: 420px;
+	left: 150px;
+	transform: rotateZ(0deg);
+}
+img:nth-child(16){
+	top: 400px;
+	left: 400px;
+	transform: rotateZ(-15deg);
+	width:300px;
+    height:250px;
+}
+img:nth-child(17){
+	top: 560px;
+	left: 830px;
+	width:300px;
+    height:250px;
+}
+img:nth-child(18){
+	top: 400px;
+	left: 960px;
+	transform: rotateZ(-10deg);
+	width:250px;
+    height:300px;
+}
+img:nth-child(19){
+	top: 600px;
+	left: 1300px;
+}
+img:nth-child(20){
+	top: 680px;
+	left: 0px;
+	transform: rotateZ(-15deg);
+	width:250px;
+    height:180px;
+}
+img:nth-child(21){
+	top: 750px;
+	left: 400px;
+}
+img:nth-child(22){
+	top: 630px;
+	left: 500px;
+	transform: rotateZ(-10deg);
+}
+img:nth-child(23){
+	top: 760px;
+	left: 850px;
+	width:280px;
+    height:220px;
+}
+img:nth-child(24){
+	top: 650px;
+	left: 950px;
+	transform: rotateZ(-15deg);
+}
+img:nth-child(25){
+	top: 780px;
+	left: 1350px;
+}
+img:nth-child(26){
+	top: 820px;
+	left: 20px;
+	transform: rotateZ(-15deg);
+	width:300px;
+    height:220px;
+}
+img:nth-child(27){
+	top: 980px;
+	left: 420px;
+	width:250px;
+    height:300px;
+}
+img:nth-child(28){
+	top: 850px;
+	left: 540px;
+	transform: rotateZ(-105deg);
+	width:250px;
+    height:300px;
+}
+img:nth-child(29){
+	top: 980px;
+	left: 900px;
+}
+img:nth-child(30){
+	top: 1000px;
+	left: 1100px;
+	width:220px;
+    height:300px;
+}
+img:nth-child(31){
+	top: 850px;
+	left: 1200px;
+	transform: rotateZ(-15deg);
+	width:250px;
+    height:280px;
+}
+img:nth-child(32){
+	top: 1200px;
+	left: 100px;
+	width:220px;
+    height:300px;
+}
+img:nth-child(33){
+	top: 1100px;
+	left: 200px;
+	transform: rotateZ(-10deg);
+	width:350px;
+    height:200px;
+}
+img:nth-child(34){
+	top: 1200px;
+	left: 600px;
+}
+img:nth-child(35){
+	top: 1050px;
+	left: 700px;
+	transform: rotateZ(-15deg);
+	width:220px;
+    height:280px;
+}
+img:nth-child(36){
+	top: 1200px;
+	left: 1050px;
+	width:350px;
+    height:190px;
+}
+img:nth-child(37){
+	top: 1100px;
+	left: 1200px;
+	transform: rotateZ(-15deg);
+}
+img:nth-child(38){
+	top: 1400px;
+	left: 100px;
+}
+img:nth-child(39){
+	top: 1300px;
+	left: 200px;
+	transform: rotateZ(-15deg);
+	width:250px;
+    height:330px;
+}
+img:nth-child(40){
+	top: 1450px;
+	left: 600px;
+	width:200px;
+    height:320px;
+}
+img:nth-child(41){
+	top: 1300px;
+	left: 700px;
+	transform: rotateZ(-15deg);
+	width:220px;
+    height:300px;
+}
+img:nth-child(42){
+	top: 1410px;
+	left: 1050px;
+	width:280px;
+    height:230px;
+}
+img:nth-child(43){
+	top: 1300px;
+	left: 1200px;
+	transform: rotateZ(-15deg);
+	width:250px;
+    height:280px;
+}
+
+</style>
+
+<img src="Imagenes/BestFanart1.jpg" alt="">
+<img src="Imagenes/BestFanart2.jpg" alt="">
+<img src="Imagenes/BestFanart3.jpg" alt="">
+<img src="Imagenes/BestFanart4.jpg" alt="">
+<img src="Imagenes/BestFanart5.jpg" alt="">
+<img src="Imagenes/BestFanart6.jpg" alt="">
+<img src="Imagenes/BestFanart7.jpg" alt="">
+<img src="Imagenes/BestFanart8.jpg" alt="">
+<img src="Imagenes/BestFanart9.jpg" alt="">
+<img src="Imagenes/BestFanart10.jpg" alt="">
+<img src="Imagenes/BestFanart11.jpg" alt="">
+<img src="Imagenes/BestFanart12.jpg" alt="">
+<img src="Imagenes/BestFanart13.jpg" alt="">
+<img src="Imagenes/BestFanart14.jpg" alt="">
+<img src="Imagenes/BestFanart15.jpg" alt="">
+<img src="Imagenes/BestFanart16.jpg" alt="">
+<img src="Imagenes/BestFanart17.jpg" alt="">
+<img src="Imagenes/BestFanart18.jpg" alt="">
+<img src="Imagenes/BestFanart19.jpg" alt="">
+<img src="Imagenes/BestFanart20.jpg" alt="">
+<img src="Imagenes/BestFanart21.jpg" alt="">
+<img src="Imagenes/BestFanart22.jpg" alt="">
+<img src="Imagenes/BestFanart23.jpg" alt="">
+<img src="Imagenes/BestFanart24.jpg" alt="">
+<img src="Imagenes/BestFanart25.jpg" alt="">
+<img src="Imagenes/BestFanart26.jpg" alt="">
+<img src="Imagenes/BestFanart27.jpg" alt="">
+<img src="Imagenes/BestFanart28.jpg" alt="">
+<img src="Imagenes/BestFanart29.jpg" alt="">
+<img src="Imagenes/BestFanart30.jpg" alt="">
+<img src="Imagenes/BestFanart31.jpg" alt="">
+<img src="Imagenes/BestFanart32.jpg" alt="">
+<img src="Imagenes/BestFanart33.jpg" alt="">
+<img src="Imagenes/BestFanart34.jpg" alt="">
+<img src="Imagenes/BestFanart35.jpg" alt="">
+<img src="Imagenes/BestFanart36.jpg" alt="">
+<img src="Imagenes/BestFanart37.jpg" alt="">
+<img src="Imagenes/BestFanart38.jpg" alt="">
+<img src="Imagenes/BestFanart39.jpg" alt="">
+<img src="Imagenes/BestFanart40.jpg" alt="">
+<img src="Imagenes/BestFanart41.jpg" alt="">
+<img src="Imagenes/BestFanart42.jpg" alt="">
+<video autoplay muted loop>
+  <source src="Imagenes/BestFanartStar.mp4" type="video/mp4">
+</video>
+
+
+</body>
+</html>
